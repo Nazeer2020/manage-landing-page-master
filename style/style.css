@@ -1,0 +1,624 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;500;700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    font-family: 'Be Vietnam', sans-serif;
+    font-size: 16px;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    font-size: clamp(5px, 2vw, 16px);
+}
+
+.row {
+ padding: 0 5%;
+ text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: hsl(228, 39%, 23%);
+}
+
+h1 {
+    font-size: clamp(30px, 5vw, 40px);
+}
+
+h2 {
+    font-size: clamp(24px, 4vw, 30px);
+}
+
+h3 {
+    font-size: clamp(16px, 3.5vw, 20px);
+}
+
+p {
+   font-size: clamp(14px, 3vw, 18px);
+   color: hsl(227, 12%, 61%);
+   line-height: 1.5;
+   padding: 20px 0;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(12, 88%, 59%);
+    color: #fff;
+    border-radius: 24px;
+    width: 150px;
+    height: 40px;
+    margin: 0 auto;
+    box-shadow: 0 3px 10px -2px hsl(12, 88%, 59%);
+    transition: hover 500ms ease;
+    cursor: pointer;
+}
+
+
+
+/* ========================================= Header ==================================== */
+/* ========================================= Header ==================================== */
+
+header {
+    background-image: url("../images/bg-tablet-pattern.svg");
+    background-position: 300% -20%;
+    background-size: 95%;
+    background-repeat: no-repeat;
+    
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 5%;
+}
+
+
+.fa-bars {
+    cursor: pointer;
+}
+
+.mobile__nav {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    left: 5%;
+    right: 5%;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 5px -2.5px #999;
+}
+
+.mobile__nav--list {
+    padding: 5% 0;
+}
+
+.mobile__nav--item {
+    padding: 10px;
+}
+
+.mobile__nav--link {
+    color: hsl(223, 17%, 8%);
+    font-weight: 700;
+}
+
+.des__nav--list {
+    display: none;
+}
+
+.des__nav--btn {
+    margin: 0;
+    display: none;
+    width: 120px;
+}
+
+.des__nav--item {
+    margin: 0 10px;
+}
+
+.des__nav--link {
+    color: #000;
+}
+
+.hero {
+    background-image: url("../images/bg-tablet-pattern.svg");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-position-x: 180%;
+    background-size: 65%;
+    padding-bottom: 80px;
+
+}
+
+
+/* ========================================= Section ==================================== */
+/* ========================================= Section ==================================== */
+
+
+section {
+    padding: 0 0 30px 0;
+    
+}
+
+.section__first--row {
+    padding-right: 0;
+    overflow: hidden;
+}
+
+.section__first--row--para {
+    padding-right: 5%;
+}
+
+.sub__row {
+    text-align: left;
+    
+}
+
+.sub__col--heading {
+    display: inline-block;
+    background-color: hsl(12, 88%, 93%);
+    margin-left: 15%;
+    padding-left: 5%;
+    width: 85%;
+    white-space: nowrap;
+}
+
+span {
+    display: inline-block;
+    background-color: hsl(12, 88%, 59%);
+    color: #fff;
+    width: 17%;
+    height: 30px;
+    border-radius: 24px;
+    text-align: center;
+    position: absolute;
+    padding: 0;
+    margin-top: -4px;
+}
+
+.testimonail__heading {
+    padding: 30px 0 50px 0;
+}
+
+
+
+.testimonial {
+    position: relative;
+    min-height: 300px;
+    max-height: 400px;
+    margin-bottom: 40px;
+    overflow: hidden;
+    width: 100%;
+    
+}
+
+.slide__track {
+    
+    height: 100%;
+    transition: transform 300ms ease-in;
+    width: 100%;
+}
+
+.silde {
+    position: absolute;
+    background-color: hsl(227, 12%, 97%);
+    margin-top: 40px;
+    padding: 0 5%;
+    width: 100%;
+    
+   
+}
+
+.silde__image {
+    width: 80px;
+    height: 80px;
+    border-radius: 80%;
+    margin-top: -40px;
+    margin-bottom: 20px;
+}
+
+
+
+.current__slide {
+    z-index: 9999;
+   
+}
+
+.testimonial__nav {
+    position: absolute;
+    top: 90%;
+    width: 90%;
+}
+
+.testimonial__btn {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid hsl(12, 88%, 59%);
+    background-color: transparent;
+    margin: 0 2px;
+    cursor: pointer;
+}
+
+.testimonial__btn--active {
+    background-color: hsl(12, 88%, 59%);
+}
+
+.testimonial02 {
+    display: none;
+}
+
+/* ========================================= Footer ==================================== */
+/* ========================================= Footer ==================================== */
+
+footer .col {
+    padding: 5% 0;
+}
+
+.footer__first--row {
+    background-color: hsl(12, 88%, 59%);
+    color: #fff;
+    padding: 15% 0;
+}
+
+.footer__heading {
+    color: #fff;
+}
+
+.footer__first--row--btn {
+    background-color: #fff;
+    color: hsl(12, 88%, 59%);
+    margin-top: 40px;
+}
+
+.footer__second--row {
+    background-color: hsl(223, 17%, 8%);
+    color: #fff;
+}
+
+.footer__second--row--col {
+    display: flex;
+}
+
+.copy__right-para02 {
+    display: none;
+}
+
+.footer__input {
+    width: 90%;
+    border-radius: 24px;
+}
+
+.footer__btn {
+    width: 7%;
+    margin-left: 3%;
+}
+
+.footer__second--row--col-2 {
+    justify-content: space-between;
+    text-align: left;
+    
+}
+
+.info__list {
+    padding: 0 10%;
+}
+
+.info__list--item {
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.socail__list--item {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.socail__list--link {
+    font-size: 200%;
+    color: #fff;
+}
+
+.col__socail__list02 {
+    display: none;
+}
+
+.footer__span {
+    display: none;
+    color: hsl(12, 88%, 59%);
+    background-color: transparent;
+    margin: 7% auto 0 11%;
+    font-size: clamp(12px, 2vw, 16px);
+    text-align: center;
+    white-space: nowrap;
+    
+  }
+
+/* ========================================= Dom Manipulation Classes ==================================== */
+/* ========================================= Dom Manipulation Classes ==================================== */
+
+.show {
+    display: block;
+}
+
+.opacity {
+    background-color: rgb(243, 242, 242);
+}
+
+/* hover effect */
+
+.btn:hover {
+    background-color: hsl(12, 88%, 70%);
+}
+
+.socail__list--link:hover,
+.info__list--item:hover {
+    color: hsl(12, 88%, 59%);
+}
+
+.des__nav--link:hover {
+    color: hsl(227, 12%, 61%);
+}
+
+.footer__first--row--btn:hover {
+    background-color: hsl(227, 12%, 90%);
+}
+
+/* ========================================= Medai Query ==================================== */
+/* ========================================= Medai Query ==================================== */
+
+/* Gemral */
+
+@media (min-width: 700px){
+    .row {
+        display: flex;
+        padding: 0 7%;
+    }
+}
+
+/* header */
+
+@media (min-width: 700px){
+    header {
+        background-position: 120% -50%;
+        background-size: 45%;
+    }
+}
+
+/* nav */
+
+@media (min-width: 700px){
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5% 7%;
+    }
+
+    .fa-bars {
+        display: none;
+    }
+
+    .des__nav--list {
+        display: flex;
+        margin: 0 auto;
+    }
+    .des__nav--btn {
+       display: flex;
+    }
+}
+
+
+/* hero */
+
+@media (min-width:700px){
+    .hero {
+        flex-direction: row-reverse;
+        background-image: none;
+        align-items: center;
+    }
+
+    .hero__text {
+        text-align: left;
+        text-align-last: left;
+    }
+
+    .hero__text--para {
+        padding-right: 50%;
+    }
+
+    .hero__text--btn {
+        
+        margin: 0 auto 0 0;
+    }
+}
+
+/* Section first row */
+
+@media (min-width: 700px){
+    section {
+        padding-top: 80px;
+        background-image: url("../images/bg-tablet-pattern.svg");
+        background-repeat: no-repeat;
+        background-size: 30%;
+        background-position: -18% 65%;
+    }
+    .section__first--row--text {
+        text-align: left;
+    }
+
+    span {
+        margin-top: 0;
+        width: 5%;
+    }
+
+    .sub__col--heading {
+        background-color: transparent;
+        margin-left: 7%;
+    }
+
+    .sub__row--para {
+        margin-left: 12%;
+    }
+}
+
+/* Section first row */
+
+@media (min-width: 700px){
+
+
+    .section__second--row {
+        display: flex;
+        justify-content: center;
+    }
+   .testimonial {
+       display: none;
+   }
+
+   .testimonial02 {
+    display: flex;
+      }
+
+    .last__slide {
+        display: none;
+    }
+
+    .silde__des {
+        background-color: hsl(227, 12%, 97%);
+        margin-top: 40px;
+        padding: 0 2%;
+        width: 100%;
+        margin: 3% auto;
+        text-align: center;
+    }
+
+    .silde__des--bt {
+        margin-left: 2%;
+        margin-right: 2%;
+        text-align: center;
+        width: 140%;
+    }
+}
+
+/* footer */
+
+@media(min-width: 700px){
+
+    .footer__first--row--btn {
+        margin-left: auto;
+        margin-right: 0;
+    }
+
+    .footer__heading {
+        text-align: left;
+        padding-bottom: 1%;
+    }
+
+    .last-br {
+        display: none;
+        
+    }
+
+    .footer__first--row {
+        align-items: center;
+    }
+}
+
+
+@media(min-width: 700px) {
+    .footer__second--row {
+        flex-direction: row-reverse;
+    }
+    .footer__second--row .col {
+        width: 100%;
+    }
+    .copy__right-para01 {
+        display: none;
+    }
+    .copy__right-para02 {
+        display: block;
+    }
+
+    .col__socail__list01 {
+        display: none;
+    }
+    .col__socail__list02 {
+        display: block;
+    }
+
+    .footer__input {
+        width: 50%;
+        margin-right: 0;
+        margin-left: auto;
+    }
+
+    .footer_btn {
+        margin-right: 0;
+        
+    }
+    .first__col {
+        text-align: right;
+    }
+
+    .last__col {
+        text-align: left;
+    }
+
+    .socail__list {
+        text-align: left;
+    }
+
+    .footer__second--row--col-2 {
+        text-align: left;
+    }
+
+    .footer__span {
+        
+        margin: 2% auto 0 5%;
+        
+        
+      }
+}
+
+
+@media(min-width: 700px) and (max-width: 1300px){
+    .footer__span {
+        
+        margin: 3% auto 0 2%;
+        font-size: clamp(8px, 2vw, 12px);
+        
+      }
+}
+
+@media (min-width: 1000px){
+    .des__nav--item {
+        margin: 0 20px;
+    }
+
+}
+
+
+@media(min-width: 1200px) and (max-width:2000px){
+    header {
+        background-position: 110% -70%;
+        background-size: 40%;
+    }
+}
