@@ -345,7 +345,7 @@ footer .col {
     display: none;
     color: hsl(12, 88%, 59%);
     background-color: transparent;
-    margin: 7% auto 0 11%;
+    margin: 8% auto 0 11%;
     font-size: clamp(12px, 2vw, 16px);
     text-align: center;
     white-space: nowrap;
